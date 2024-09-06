@@ -36,6 +36,25 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <style>
+    .video-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .video-wrapper {
+      margin: 5px;
+      text-align: center;
+    }
+
+    .video-caption {
+      margin-top: 5px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
 </head>
 
 <body>
@@ -294,11 +313,13 @@
           <div class="column content">
             <h3 class="title is-4" style="text-align: center;">Pour Water L-1/3 (R-2/3)</h3>
             <div style="display: flex; justify-content: center;">
-              <video id="video1" width="384" height="206" controls muted loading="lazy" playsinline>
+              <video id="video1" width="384" height="206" controls muted style="margin: 5px;" style="margin: 5px;"
+                loading="lazy" playsinline>
                 <source src="./static/videos/4-Instruction Following-Pour Water-LR/Pour Water-L-1-3.mp4_compressed.mp4"
                   type="video/mp4">
               </video>
-              <video id="video2" width="384" height="206" controls muted loading="lazy" playsinline>
+              <video id="video2" width="384" height="206" controls muted style="margin: 5px;" loading="lazy"
+                playsinline>
                 <source src="./static/videos/4-Instruction Following-Pour Water-LR/Pour Water-R-2-3.mp4_compressed.mp4"
                   type="video/mp4">
               </video>
@@ -407,26 +428,108 @@
         </div>
         <!-- 可展开内容 -->
         <div id="expandableContent" style="display: none; margin-top: 20px;">
-          <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-            <div
-              style="width: 400px; height: 200px; border: 2px solid black; margin: 10px; display: flex; justify-content: center; align-items: center;">
-              <p>视频1</p>
+          <!-- Robot Dog Section -->
+          <div class="columns is-centered">
+            <div class="column content">
+              <h3 class="title is-4" style="text-align: center;">Robot Dog</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/1-Dexterity-Robot Dog/RDT.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption"><strong>RDT(ours)</strong></div>
+                </div>
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/1-Dexterity-Robot Dog/RDT_scratch.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption">RDT Scratch</div>
+                </div>
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/1-Dexterity-Robot Dog/ACT.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption">ACT</div>
+                </div>
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/1-Dexterity-Robot Dog/OpenVLA.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption">OpenVLA</div>
+                </div>
+              </div>
             </div>
-            <div
-              style="width: 400px; height: 200px; border: 2px solid black; margin: 10px; display: flex; justify-content: center; align-items: center;">
-              <p>视频2</p>
+          </div>
+          
+          <!-- Handover Section -->
+          <div class="columns is-centered">
+            <div class="column content">
+              <h3 class="title is-4" style="text-align: center;">Handover</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/5-Few-Shot Learning-1-Handover/RDT.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption"><strong>RDT(ours)</strong></div>
+                </div>
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/5-Few-Shot Learning-1-Handover/RDT_from_scratch.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption">RDT Scratch</div>
+                </div>
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/5-Few-Shot Learning-1-Handover/ACT.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption">ACT</div>
+                </div>
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/5-Few-Shot Learning-1-Handover/OpenVLA.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption">OpenVLA</div>
+                </div>
+              </div>
             </div>
-            <div
-              style="width: 400px; height: 200px; border: 2px solid black; margin: 10px; display: flex; justify-content: center; align-items: center;">
-              <p>视频3</p>
-            </div>
-            <div
-              style="width: 400px; height: 200px; border: 2px solid black; margin: 10px; display: flex; justify-content: center; align-items: center;">
-              <p>视频4</p>
+          </div>
+  
+          <!-- Fold Shorts Section -->
+          <div class="columns is-centered">
+            <div class="column content">
+              <h3 class="title is-4" style="text-align: center;">Fold Shorts</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/RDT.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption"><strong>RDT(ours)</strong></div>
+                </div>
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/RDT from scratch.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption">RDT Scratch</div>
+                </div>
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/ACT.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption">ACT</div>
+                </div>
+                <div class="video-wrapper">
+                  <video width="384" height="206" controls muted loading="lazy" autoplay loop playsinline>
+                    <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/OpenVLA.mp4_compressed.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-caption">OpenVLA</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!--/ Compare. -->
+      </div>
+      <!--/ Compare. -->
+    </div>
   </section>
 
   <style>
