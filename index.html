@@ -67,41 +67,41 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">RDT-1B:<br> a Diffusion Transformer Trained on Multi-Robot Data for
               Bimanual Manipulation</h1>
-              <div class="container">
-                <div class="columns is-centered">
-                  <div class="column is-8">
-                    <div class="is-size-5 publication-authors has-text-centered">
-                      <span class="author-block">
-                        Songming Liu<sup>*,1</sup>,
-                      </span>
-                      <span class="author-block">
-                        Lingxuan Wu<sup>*,1</sup>,
-                      </span>
-                      <span class="author-block">
-                        Bangguo Li<sup>1</sup>,
-                      </span>
-                      <span class="author-block">
-                        Hengkai Tan<sup>1</sup>,
-                      </span>
-                      <span class="author-block">
-                        Huayu Chen<sup>1</sup>,
-                      </span>
-                      <span class="author-block">
-                        Zhengyi Wang<sup>1</sup>,
-                      </span>
-                      <span class="author-block">
-                        Ke Xu<sup>1</sup>,
-                      </span>
-                      <span class="author-block">
-                        Hang Su<sup>1</sup>,
-                      </span>
-                      <span class="author-block">
-                        Jun Zhu<sup>1</sup>
-                      </span>
-                    </div>
+            <div class="container">
+              <div class="columns is-centered">
+                <div class="column is-8">
+                  <div class="is-size-5 publication-authors has-text-centered">
+                    <span class="author-block">
+                      Songming Liu<sup>*,1</sup>,
+                    </span>
+                    <span class="author-block">
+                      Lingxuan Wu<sup>*,1</sup>,
+                    </span>
+                    <span class="author-block">
+                      Bangguo Li<sup>1</sup>,
+                    </span>
+                    <span class="author-block">
+                      Hengkai Tan<sup>1</sup>,
+                    </span>
+                    <span class="author-block">
+                      Huayu Chen<sup>1</sup>,
+                    </span>
+                    <span class="author-block">
+                      Zhengyi Wang<sup>1</sup>,
+                    </span>
+                    <span class="author-block">
+                      Ke Xu<sup>1</sup>,
+                    </span>
+                    <span class="author-block">
+                      Hang Su<sup>1</sup>,
+                    </span>
+                    <span class="author-block">
+                      Jun Zhu<sup>1</sup>
+                    </span>
                   </div>
                 </div>
               </div>
+            </div>
             <div class="is-size-5 publication-authors">
               <span class="author-block"><sup>1</sup>Tsinghua University</span><br>
               <span class="author-block"><sup>*</sup>denotes equal contribution</span>
@@ -289,10 +289,10 @@
           </div>
 
           <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-            <img src="./static/videos/1.png" style="width:45%; height:auto; margin: 2%;" alt="Water level pouring with left hand"
-              style="max-width: 45%; margin: 5px;">
-            <img src="./static/videos/2.png" style="width:45%; height:auto; margin: 2%;" alt="Water level pouring with right hand"
-              style="max-width: 45%; margin: 5px;">
+            <img src="./static/videos/1.png" style="width:45%; height:auto; margin: 2%;"
+              alt="Water level pouring with left hand" style="max-width: 45%; margin: 5px;">
+            <img src="./static/videos/2.png" style="width:45%; height:auto; margin: 2%;"
+              alt="Water level pouring with right hand" style="max-width: 45%; margin: 5px;">
           </div>
           <p style="text-align: justify;">Resulting water levels for 8 trails. Left: pouring water with the left hand,
             specifying the water level as one-third; Right: pouring water with the right hand, specifying the water
@@ -326,10 +326,12 @@
           <h3 class="title is-4" style="text-align: center;">Few-Shot Learning</h3>
           <p>The following videos show that RDT can learn new skills with just a few demonstrations.</p>
           <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-            <video style="width:45%; height:auto; margin: 2% 2% 0 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <video style="width:45%; height:auto; margin: 2% 2% 0 2%;" controls muted loading="lazy" autoplay loop
+              playsinline>
               <source src="./static/videos/11.mp4" type="video/mp4">
             </video>
-            <video style="width:45%; height:auto; margin: 2% 2% 0 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <video style="width:45%; height:auto; margin: 2% 2% 0 2%;" controls muted loading="lazy" autoplay loop
+              playsinline>
               <source src="./static/videos/12.mp4" type="video/mp4">
             </video>
           </div>
@@ -371,173 +373,326 @@
     </div>
   </section>
 
+  <!-- <section class="section"> -->
+  <!-- <div class="container is-max-desktop"> -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <div class="column is-full"> -->
+  <!-- <h2 class="title is-3" style="text-align: center;">Comparative Results with Baselines</h2> -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <div class="column content"> -->
+  <!-- <p> -->
+  <!-- We compare the performance of RDT with OpenVLA and ACT. -->
+  <!-- </p> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <img src="./static/images/figure.png" style="width:100%; height:auto; margin: 2%;" alt="Water level pouring with right hand" -->
+  <!-- style="max-width: 45%; margin: 5px;"> -->
+  <!-- </div> -->
+  <!-- <div class="columns"> -->
+  <!-- <div style="display: flex; align-items: center; margin-top: 20px;"> -->
+  <!-- <span style="font-size: 20px;">Expand Comparative Videos</span> -->
+  <!-- <button id="toggleButton" onclick="toggleContent()" -->
+  <!-- style="border: none; background: none; font-size: 20px; cursor: pointer; margin-left: 10px;">[+]</button> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div id="expandableContent" style="display: none; margin-top: 20px;"> -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <div class="column content"> -->
+  <!-- <h3 class="title is-4" style="text-align: center;">Robot Dog</h3> -->
+  <!--  -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/1-Dexterity-Robot Dog/RDT.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;"><strong>RDT (ours)</strong></div> -->
+  <!-- </div> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/1-Dexterity-Robot Dog/RDT_scratch.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;">RDT Scratch</div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!--  -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/1-Dexterity-Robot Dog/ACT.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;">ACT</div> -->
+  <!-- </div> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/1-Dexterity-Robot Dog/OpenVLA.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;">OpenVLA</div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!--  -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <div class="column content"> -->
+  <!-- <h3 class="title is-4" style="text-align: center;">Handover</h3> -->
+  <!--  -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/5-Few-Shot Learning-1-Handover/RDT.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;"><strong>RDT (ours)</strong></div> -->
+  <!-- </div> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/5-Few-Shot Learning-1-Handover/RDT_from_scratch.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;">RDT Scratch</div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!--  -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/5-Few-Shot Learning-1-Handover/ACT.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;">ACT</div> -->
+  <!-- </div> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/5-Few-Shot Learning-1-Handover/OpenVLA.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;">OpenVLA</div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!--  -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <div class="column content"> -->
+  <!-- <h3 class="title is-4" style="text-align: center;">Fold Shorts</h3> -->
+  <!--  -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/RDT.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;"><strong>RDT (ours)</strong></div> -->
+  <!-- </div> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/RDT from scratch.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;">RDT Scratch</div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!--  -->
+  <!-- <div class="columns is-centered"> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/ACT.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;">ACT</div> -->
+  <!-- </div> -->
+  <!-- <div class="column" style="text-align: center;"> -->
+  <!-- <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline> -->
+  <!-- <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/OpenVLA.mp4_compressed.mp4" type="video/mp4"> -->
+  <!-- </video> -->
+  <!-- <div style="text-align: center;">OpenVLA</div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </section> -->
+  <!--  -->
+  <!-- <style> -->
+  <!-- #toggleButton:hover { -->
+  <!-- text-decoration: underline; -->
+  <!-- } -->
+  <!-- </style> -->
+  <!--  -->
+  <!-- <script> -->
+  <!-- function toggleContent() { -->
+  <!-- var content = document.getElementById("expandableContent"); -->
+  <!-- var button = document.getElementById("toggleButton"); -->
+  <!-- if (content.style.display === "none") { -->
+  <!-- content.style.display = "block"; -->
+  <!-- button.textContent = "[-]"; -->
+  <!-- } else { -->
+  <!-- content.style.display = "none"; -->
+  <!-- button.textContent = "[+]"; -->
+  <!-- } -->
+  <!-- } -->
+  <!-- </script> -->
+
   <section class="section">
     <div class="container is-max-desktop">
-      <!-- Compare. -->
       <div class="columns is-centered">
         <div class="column is-full">
-        <h2 class="title is-3" style="text-align: center;">Comparative Results with Baselines</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              We compare the performance of RDT with OpenVLA and ACT.
-            </p>
-          </div>
-        </div>
-        <div class="columns is-centered">
-          <img src="./static/images/figure.png" style="width:100%; height:auto; margin: 2%;" alt="Water level pouring with right hand"
-          style="max-width: 45%; margin: 5px;">
-        </div>
-        <!-- 插入点击按钮和前面的文本 -->
-        <div class="columns">
-          <div style="display: flex; align-items: center; margin-top: 20px;">
-            <span style="font-size: 20px;">Expand Comparative Videos</span>
-            <button id="toggleButton" onclick="toggleContent()"
-              style="border: none; background: none; font-size: 20px; cursor: pointer; margin-left: 10px;">[+]</button>
-          </div>
-        </div>
-        <!-- 可展开内容 -->
-        <div id="expandableContent" style="display: none; margin-top: 20px;">
-          <!-- Robot Dog Section -->
-          <div class="columns is-centered">
-            <div class="column content">
-              <h3 class="title is-4" style="text-align: center;">Robot Dog</h3>
-        
-              <!-- First row of videos -->
-              <div class="columns is-centered">
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/1-Dexterity-Robot Dog/RDT.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;"><strong>RDT (ours)</strong></div>
-                </div>
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/1-Dexterity-Robot Dog/RDT_scratch.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;">RDT Scratch</div>
-                </div>
-              </div>
-        
-              <!-- Second row of videos -->
-              <div class="columns is-centered">
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/1-Dexterity-Robot Dog/ACT.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;">ACT</div>
-                </div>
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/1-Dexterity-Robot Dog/OpenVLA.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;">OpenVLA</div>
-                </div>
-              </div>
+          <h2 class="title is-3">Comparison with Baselines</h2>
+          <p>We benchmark our pre-trained RDT model (RDT (ours)) against baselines including RDT without pre-training
+            (RDT (scratch)), OpenVLA, and ACT.</p>
+
+          <!-- Placeholder for bar chart -->
+          <img src="./static/images/figure.png">
+
+          <h3 class="title is-4 mt-6">Sample Comparative Videos</h3>
+
+          <!-- Row 1 -->
+          <div class="columns is-multiline">
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/1.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">⚠️ACT<br>(wrong direction)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/2.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">❌OpenVLA<br>(grab failed)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/3.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">⚠️RDT (scratch)<br>(not straight)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/4.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">✅RDT (ours)<br>(straight route)</p>
             </div>
           </div>
-        
-          <!-- Handover Section -->
-          <div class="columns is-centered">
-            <div class="column content">
-              <h3 class="title is-4" style="text-align: center;">Handover</h3>
-        
-              <!-- First row of videos -->
-              <div class="columns is-centered">
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/5-Few-Shot Learning-1-Handover/RDT.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;"><strong>RDT (ours)</strong></div>
-                </div>
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/5-Few-Shot Learning-1-Handover/RDT_from_scratch.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;">RDT Scratch</div>
-                </div>
-              </div>
-        
-              <!-- Second row of videos -->
-              <div class="columns is-centered">
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/5-Few-Shot Learning-1-Handover/ACT.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;">ACT</div>
-                </div>
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/5-Few-Shot Learning-1-Handover/OpenVLA.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;">OpenVLA</div>
-                </div>
-              </div>
+
+          <!-- Row 2 -->
+          <div class="columns is-multiline is-centered" style="display: flex; justify-content: space-between;">
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/5.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">⚠️OpenVLA<br>(pour failed)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/6.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">⚠️RDT (scratch)<br>(wrong water level)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/7.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">✅RDT (ours)<br>(correct water level)</p>
             </div>
           </div>
-        
-          <!-- Fold Shorts Section -->
-          <div class="columns is-centered">
-            <div class="column content">
-              <h3 class="title is-4" style="text-align: center;">Fold Shorts</h3>
-        
-              <!-- First row of videos -->
-              <div class="columns is-centered">
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/RDT.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;"><strong>RDT (ours)</strong></div>
-                </div>
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/RDT from scratch.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;">RDT Scratch</div>
-                </div>
-              </div>
-        
-              <!-- Second row of videos -->
-              <div class="columns is-centered">
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/ACT.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;">ACT</div>
-                </div>
-                <div class="column" style="text-align: center;">
-                  <video style="width: 90%; height: auto;" controls muted loading="lazy" autoplay loop playsinline>
-                    <source src="./static/videos/5-Few-Shot Learning-2-Fold Shorts/OpenVLA.mp4_compressed.mp4" type="video/mp4">
-                  </video>
-                  <div style="text-align: center;">OpenVLA</div>
-                </div>
-              </div>
+
+          <!-- Row 3 -->
+          <div class="columns is-multiline">
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/8.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">❌ACT<br>(grab failed)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/9.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">❌OpenVLA<br>(grab failed)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/10.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">❌RDT (scratch)<br>(grab failed)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/11.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">✅RDT (ours)<br>(pour success)</p>
             </div>
           </div>
+
+          <!-- Row 4 -->
+          <div class="columns is-multiline">
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/12.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">❌ACT<br>(grab failed)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/13.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">❌OpenVLA<br>(grab failed)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/14.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">❌RDT (scratch)<br>(fold failed)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/15.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">✅RDT (ours)<br>(fold success)</p>
+            </div>
+          </div>
+
         </div>
-      <!--/ Compare. -->
+      </div>
     </div>
   </section>
 
-  <style>
-    #toggleButton:hover {
-      text-decoration: underline;
-    }
-  </style>
-
-  <script>
-    function toggleContent() {
-      var content = document.getElementById("expandableContent");
-      var button = document.getElementById("toggleButton");
-      if (content.style.display === "none") {
-        content.style.display = "block";
-        button.textContent = "[-]";
-      } else {
-        content.style.display = "none";
-        button.textContent = "[+]";
-      }
-    }
-  </script>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">RDT Repeatability</h2>
+          <p class="content has-text-justified mb-4">
+            We use the following videos to demonstrate the robustness and repeatability of RDT.
+          </p>
+          
+          <!-- Row 1 -->
+          <div class="columns is-multiline">
+            <div class="column is-6">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/repeatibility/1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-6">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/repeatibility/2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+  
+          <!-- Row 2 -->
+          <div class="columns is-multiline">
+            <div class="column is-6">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/repeatibility/3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-6">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/repeatibility/4.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
