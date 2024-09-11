@@ -532,17 +532,17 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column is-full">
-          <h2 class="title is-3">Comparison with Baselines</h2>
+          <h2 class="title is-3 has-text-centered">Comparison with Baselines</h2>
           <p>We benchmark our pre-trained RDT model (RDT (ours)) against baselines including RDT without pre-training
             (RDT (scratch)), OpenVLA, and ACT.</p>
 
           <!-- Placeholder for bar chart -->
           <img src="./static/images/figure.png">
-
-          <h3 class="title is-4 mt-6">Sample Comparative Videos</h3>
+          <p>Here are some sample comparative videos:</p>
+          <h3 class="title is-4 mt-3 has-text-centered">Dexterity</h3>
 
           <!-- Row 1 -->
-          <div class="columns is-multiline">
+          <div class="columns is-multiline is-variable is-2">
             <div class="column is-3">
               <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
                 <source src="./static/comparison/1.mp4" type="video/mp4">
@@ -568,6 +568,7 @@
               <p class="has-text-centered">✅RDT (ours)<br>(straight route)</p>
             </div>
           </div>
+          <h3 class="title is-4 has-text-centered">Instruction Following (L, 1/3)</h3>
 
           <!-- Row 2 -->
           <div class="columns is-multiline is-centered" style="display: flex; justify-content: center;">
@@ -590,9 +591,10 @@
               <p class="has-text-centered">✅RDT (ours)<br>(correct water level)</p>
             </div>
           </div>
+          <h3 class="title is-4 has-text-centered">Unseen Scene (unseen room 1)</h3>
 
           <!-- Row 3 -->
-          <div class="columns is-multiline">
+          <div class="columns is-multiline is-variable is-2">
             <div class="column is-3">
               <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
                 <source src="./static/comparison/8.mp4" type="video/mp4">
@@ -618,9 +620,10 @@
               <p class="has-text-centered">✅RDT (ours)<br>(pour success)</p>
             </div>
           </div>
+          <h3 class="title is-4 has-text-centered">Few-Shot Learning (1-shot)</h3>
 
           <!-- Row 4 -->
-          <div class="columns is-multiline">
+          <div class="columns is-multiline is-variable is-2">
             <div class="column is-3">
               <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
                 <source src="./static/comparison/12.mp4" type="video/mp4">
@@ -656,7 +659,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column is-full">
-          <h2 class="title is-3">RDT Repeatability</h2>
+          <h2 class="title is-3 has-text-centered">RDT Repeatability</h2>
           <p class="content has-text-justified mb-4">
             We use the following videos to demonstrate the robustness and repeatability of RDT.
           </p>
