@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-    content="RDT-1B: a Diffusion Transformer Trained on Multi-Robot Data for Bimanual Manipulations">
+    content="RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RDT-1B: a Diffusion Transformer Trained on Multi-Robot Data for Bimanual Manipulations</title>
+  <title>RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -65,8 +65,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">RDT-1B:<br> a Diffusion Transformer Trained on Multi-Robot Data for
-              Bimanual Manipulation</h1>
+            <h1 class="title is-1 publication-title">RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation</h1>
             <div class="container">
               <div class="columns is-centered">
                 <div class="column is-8">
@@ -190,10 +189,9 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body" style="display: flex; justify-content: center; align-items: center;">
-        <div
-          style="width: 480px; height: 200px; border: 2px solid black; display: flex; justify-content: center; align-items: center;">
-          <p>头图视频</p>
-        </div>
+        <video style="width:100%; height:auto; margin: 0%;" controls muted loading="lazy" autoplay loop playsinline>
+          <source src="./static/videos/head.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
     </div>
@@ -205,19 +203,19 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column is-full">
-          <h2 class="title is-3 has-text-centered">Abstract</h2>
+          <h2 class="title is-3 has-text-centered">Overview</h2>
           <div style="display: flex; justify-content: center;">
             <div style="display: flex; justify-content: center;">
-              <img src="./static/images/head.png" alt="描述图片内容" style="max-width: 100%; height: auto; margin: 10px;">
+              <img src="./static/images/head.png" alt="Abstract image" style="max-width: 100%; height: auto; margin: 10px;">
             </div>
           </div>
           <p style="text-align: justify;">
-            We present <b>Robotics Diffusion Transformer</b> with <b>1.2B</b> parameters (RDT-1B), which is the
-            <b>largest</b> diffusion-based foundation model for robot manipulation, pre-trained on the <b>largest</b>
-            collection of multi-robot datasets with <b>1M+</b> episodes. We have collected <b>6K+</b> episodes by
-            ourselves via Mobile ALOHA teleoperation to fine-tune RDT and have deployed it on the Mobile ALOHA robot.
-            It has set a new benchmark of generalizability in <b>bimanual manipulation</b>. It supports control of
-            almost all modern manipulators (including bimanual, joints, EEFs, and even chassis) and is ready for the
+            We present <b>Robotics Diffusion Transformer</b> with <b>1.2B</b> parameters (RDT-1B), the
+            <b>largest</b> diffusion-based foundation model for robotic manipulation. It is pre-trained on the <b>largest</b>
+            multi-robot collection of 46 datasets with 1M+ episodes. To boost its bimanual capability, we have 
+            collected 6K+ episodes (one of the <b>largest</b> to date) on the ALOHA dual-arm robot for fine-tuning.
+            It has set a new benchmark in terms of dexterity, zero-shot generalizability, and few-shot learning.
+            It supports control of almost all modern manipulators (e.g., dual-arm, joints, EEFs, and even wheeled locomotion) and is ready for the
             community to fine-tune with their robots🚀!
           </p>
         </div>
@@ -230,16 +228,16 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column is-full">
-          <h2 class="title is-3 has-text-centered">Model Architecture</h2>
+          <h2 class="title is-3 has-text-centered">RDT Framework</h2>
           <div class="has-text-centered">
-            <img src="./static/images/framework.png" alt="描述图片内容" class="image is-fullwidth">
+            <img src="./static/images/framework.png" alt="RDT Framework" class="image is-fullwidth">
           </div>
           <p class="content has-text-justified mt-4">
             Heterogeneous action spaces of various robots are embedded into a
             unified action space for cross-robot model training. <strong>Inputs:</strong> low-dimensional proprioception
-            z<sub>t</sub>, noisy action chunk ã<sub>t:t+T<sub>a</sub></sub>, control frequency c, and diffusion timestep
-            k, acting as denoising inputs, and image and language inputs, acting as conditions.
-            <strong>Outputs:</strong> denoised action chunk a<sub>t:t+T<sub>a</sub></sub>.
+            <b>z</b><sub>t</sub>, noisy action chunk <b>ã</b><sub>t:t+T<sub>a</sub></sub>, control frequency c, and diffusion timestep
+            k, acting as denoising inputs; image and language inputs, acting as conditions.
+            <strong>Outputs:</strong> denoised action chunk <b>a</b><sub>t:t+T<sub>a</sub></sub>.
           </p>
         </div>
       </div>
@@ -253,9 +251,8 @@
           <h2 class="title is-3 has-text-centered">RDT Inference Video Samples</h2>
           <h3 class="title is-4 has-text-centered">Dexterity</h3>
           <p class="content has-text-justified mb-4">
-            The following videos show that RDT can perform dexterous manipulation tasks. It must push the joystick
-            straight enough to make the robot dog move <strong>straight</strong> forward, otherwise the robot dog will
-            deviate.
+            The following videos show that RDT can perform dexterous manipulation tasks. In the sample task, it must push the joystick
+            straight enough to move the robot dog <strong>straight</strong> forward. Even the slightest push angle may cause the robot dog to deviate.
           </p>
           <div class="columns is-centered">
             <video style="width:45%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
@@ -291,9 +288,8 @@
       <div class="columns is-centered">
         <div class="column content">
           <h3 class="title is-4" style="text-align: center;">Instruction Following</h3>
-          <p>The following videos show that RDT can stick to users' instructions and <strong>zero-shot</strong>
-            generalize to unseen instructions (RDT has only seen the instructions for little, half, and full water
-            levels).</p>
+          <p>The following videos show that RDT can stick to provided instructions and <strong>zero-shot</strong>
+            generalize to unseen modalities. Note that RDT has only seen the instructions for water levels of <i>little</i>, <i>half</i>, and <i>full</i> in the training data, while <i>1/3</i> and <i>2/3</i> are unseen.</p>
           <div style="display: flex; justify-content: center; flex-wrap: wrap;">
             <video id="video1" style="width:45%; height:auto; margin: 2%;" controls muted loading="lazy">
               <source src="./static/videos/5.mp4" type="video/mp4">
@@ -309,8 +305,8 @@
             <img src="./static/videos/2.png" style="width:45%; height:auto; margin: 2%;"
               alt="Water level pouring with right hand" style="max-width: 45%; margin: 5px;">
           </div>
-          <p style="text-align: justify;">Resulting water levels for 8 trails. Left: pouring water with the left hand,
-            specifying the water level as one-third; Right: pouring water with the right hand, specifying the water
+          <p style="text-align: justify;">Resulting water levels in 8 trails. <strong>Left:</strong> pouring water with the left hand,
+            specifying the water level as one-third; <strong>Right:</strong> pouring water with the right hand, specifying the water
             level as two-thirds.</p>
         </div>
       </div>
@@ -339,7 +335,8 @@
       <div class="columns is-centered">
         <div class="column content">
           <h3 class="title is-4" style="text-align: center;">Few-Shot Learning</h3>
-          <p>The following videos show that RDT can learn new skills with just a few demonstrations.</p>
+          <p>The following videos show that RDT can learn new skills with <strong>1-5</strong> demonstrations.
+            A <i>skill</i> refers to verbs like "wipe" and "open".</p>
           <div style="display: flex; justify-content: center; flex-wrap: wrap;">
             <video style="width:45%; height:auto; margin: 2% 2% 0 2%;" controls muted loading="lazy" autoplay loop
               playsinline>
@@ -549,10 +546,10 @@
         <div class="column is-full">
           <h2 class="title is-3 has-text-centered">Comparison with Baselines</h2>
           <p>We benchmark our pre-trained RDT model (RDT (ours)) against baselines including RDT without pre-training
-            (RDT (scratch)), OpenVLA, and ACT.</p>
+            (RDT (scratch)), OpenVLA, ACT, and Octo.</p>
 
           <!-- Placeholder for bar chart -->
-          <img src="./static/images/figure.png">
+          <img src="./static/images/comparison.png" style="margin: 2%;">
           <p>Here are some sample comparative videos:</p>
           <h3 class="title is-4 mt-3 has-text-centered">Dexterity</h3>
 
@@ -595,6 +592,12 @@
             </div>
             <div class="column is-3">
               <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/comparison/octo_l_1_3.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">❌Octo<br>(grab failed)</p>
+            </div>
+            <div class="column is-3">
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
                 <source src="./static/comparison/6.mp4" type="video/mp4">
               </video>
               <p class="has-text-centered">⚠️RDT (scratch)<br>(wrong water level)</p>
@@ -618,9 +621,9 @@
             </div>
             <div class="column is-3">
               <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/comparison/9.mp4" type="video/mp4">
+                <source src="./static/comparison/octo_unseen_room.mp4" type="video/mp4">
               </video>
-              <p class="has-text-centered">❌OpenVLA<br>(grab failed)</p>
+              <p class="has-text-centered">⚠️Octo<br>(pour failed)</p>
             </div>
             <div class="column is-3">
               <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
@@ -677,6 +680,7 @@
           <h2 class="title is-3 has-text-centered">RDT Repeatability</h2>
           <p class="content has-text-justified mb-4">
             We use the following videos to demonstrate the robustness and repeatability of RDT.
+            It can complete various tasks <strong>5-8</strong> times repeatedly without any failure
           </p>
 
           <!-- Row 1 -->
@@ -712,6 +716,28 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-3 has-text-centered">Ablation Study</h2>
+          <p>
+            We conduct ablation studies on various components of RDT to understand their importance.
+            We consider the variants of:
+            <ol>
+              <li><i>RDT (ours):</i> the original RDT.</li>
+              <li><i>RDT (regress):</i> RDT w/o diffusion modeling. It employs the MSE regression training objective.</li>
+              <li><i>RDT (small):</i> RDT w/o large parameters. It has only 166M parameters.</li>
+              <li><i>RDT (scratch):</i> RDT w/o pre-training. It is trained from scratch during fine-tuning.</li>
+            </ol>
+          </p>
+          <img src="./static/images/ablation.png" style="margin: 2%;">
+          Results show that all components are crucial for the success of RDT.
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
@@ -719,39 +745,13 @@
     </div>
   </section>
 
-
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
-          <i class="fas fa-file-pdf"></i>
-        </a>
-        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              This website is licensed under a <a rel="license"
-                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-                Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
-            <p>
-              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
-                code</a> of this website,
-              we just ask that you link back to this page in the footer.
-              Please remember to remove the analytics code included in the header of the website which
-              you do not want on your website.
-            </p>
-          </div>
-        </div>
+        <p>We borrowed the page template from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a>.</p>
       </div>
     </div>
   </footer>
-
-
 
 </body>
 
