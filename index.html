@@ -760,19 +760,40 @@
     </div>
   </section>
 
-  <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <h2 class="title">Citation</h2>
-      If you find our work helpful, please cite us:
-      <pre><code>@article{liu2024rdt,
-  title={RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation},
-  author={Liu, Songming and Wu, Lingxuan and Li, Bangguo and Tan, Hengkai and Chen, Huayu and Wang, Zhengyi and Xu, Ke and Su, Hang and Zhu, Jun},
-  journal={arXiv preprint arXiv:2410.07864},
-  year={2024}
+        <h2 class="title">Citation</h2>
+        If you find our work helpful, please cite us:
+        <div style="position: relative;">
+            <pre><code id="bibtex-code">@article{liu2024rdt,
+    title={RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation},
+    author={Liu, Songming and Wu, Lingxuan and Li, Bangguo and Tan, Hengkai and Chen, Huayu and Wang, Zhengyi and Xu, Ke and Su, Hang and Zhu, Jun},
+    journal={arXiv preprint arXiv:2410.07864},
+    year={2024}
 }</code></pre>
-Thank you!
+            <button onclick="copyToClipboard()" style="position: absolute; top: 5px; right: 5px; background: none; border: none; cursor: pointer;">
+                <!-- 粘贴图标，可以使用Font Awesome 图标库 -->
+                <i class="fa fa-paste" aria-hidden="true"></i>
+            </button>
+        </div>
+        Thank you!
     </div>
-  </section>
+</section>
+
+<!-- 引入Font Awesome样式表 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<script>
+function copyToClipboard() {
+    var copyText = document.getElementById("bibtex-code").innerText;
+    navigator.clipboard.writeText(copyText).then(function() {
+        alert("已复制到剪贴板！");
+    }, function(err) {
+        console.error('无法复制文本：', err);
+    });
+}
+</script>
+
 
   <footer class="footer">
     <div class="container">
