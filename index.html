@@ -351,6 +351,26 @@
           </div>
         </div>
       </div>
+
+      <div class="columns is-centered">
+        <div class="column content">
+          <h3 class="title is-4" style="text-align: center;">Real-Time Inference</h3>
+          <p>In the experiment, we deliberately limited the movement speed of the robot arm to ensure safety and reduce wear. 
+            In fact, the inference frequency of RDT (6 action chunks/sec or 381 actions/sec) can fully support the robot arm to reach a <strong>speed comparable to humans</strong>. 
+            The following are inference videos without the speed limit of the robot arm.
+          </p>
+          <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <video style="width:45%; height:auto; margin: 2% 2% 0 2%;" controls muted loading="lazy" autoplay loop
+              playsinline>
+              <source src="./static/videos/13.mp4" type="video/mp4">
+            </video>
+            <video style="width:45%; height:auto; margin: 2% 2% 0 2%;" controls muted loading="lazy" autoplay loop
+              playsinline>
+              <source src="./static/videos/14.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
       <script>
         document.addEventListener('DOMContentLoaded', function () {
           const video1 = document.getElementById('video1');
